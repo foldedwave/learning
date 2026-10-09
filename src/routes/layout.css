@@ -1,0 +1,88 @@
+:root {
+	--bg-cream: #fbf7ee;
+	--card-bg: #ffffff;
+	--terracotta: #c2593f;
+	--terracotta-dark: #9e432c;
+	--imperial-purple: #4a2545;
+	--imperial-purple-light: #6a3663;
+	--laurel-gold: #d4a017;
+	--laurel-gold-light: #f7d665;
+	--olive-green: #2e7d32;
+	--stone-gray: #ece6d8;
+	--stone-border: #d5cbbb;
+	--charcoal: #2c2523;
+	--sky-blue: #3182ce;
+	--shadow: 0 6px 18px rgba(74, 37, 69, 0.08);
+	--radius: 18px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family:
+		'Segoe UI',
+		system-ui,
+		-apple-system,
+		sans-serif;
+}
+
+body {
+	background-color: var(--bg-cream);
+	color: var(--charcoal);
+	line-height: 1.5;
+	min-height: 100vh;
+}
+
+button {
+	font: inherit;
+}
+
+/* Shared by the authored lesson HTML (rendered with {@html}) and the rules modal */
+.modal-section {
+	margin-bottom: 18px;
+}
+
+.modal-section h4 {
+	color: var(--terracotta);
+	font-size: 1rem;
+	margin-bottom: 6px;
+	font-weight: 800;
+}
+
+.rule-box {
+	background: var(--bg-cream);
+	border: 1px solid var(--stone-border);
+	border-radius: 12px;
+	padding: 12px 14px;
+	margin-bottom: 8px;
+	font-size: 0.92rem;
+}
+
+.rule-box strong {
+	color: var(--imperial-purple);
+}
+
+.concept-tag {
+	background: #fff4d9;
+	color: #925f00;
+	font-weight: 800;
+	font-size: 0.72rem;
+	text-transform: uppercase;
+	padding: 4px 10px;
+	border-radius: 20px;
+	display: inline-block;
+	width: fit-content;
+	letter-spacing: 0.5px;
+}
+
+@keyframes popIn {
+	0% {
+		transform: scale(0.96);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
