@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { MAX_ROMAN, toRoman } from '../roman/engine';
+	import { MAX_ROMAN, toRoman } from '#lib/content/maths/number/roman-numerals/convert.ts';
 
 	let value = $state<number | null>(1984);
 

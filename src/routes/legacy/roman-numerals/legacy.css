@@ -1,4 +1,5 @@
-:root {
+/* Legacy Roman Quest styles, scoped under .legacy-roman so they never leak into the new site. */
+:where(.legacy-roman) {
 	--bg-cream: #fbf7ee;
 	--card-bg: #ffffff;
 	--terracotta: #c2593f;
@@ -16,7 +17,8 @@
 	--radius: 18px;
 }
 
-* {
+.legacy-roman,
+.legacy-roman * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -27,14 +29,14 @@
 		sans-serif;
 }
 
-body {
+.legacy-roman {
 	background-color: var(--bg-cream);
 	color: var(--charcoal);
 	line-height: 1.5;
 	min-height: 100vh;
 }
 
-button {
+.legacy-roman button {
 	font: inherit;
 }
 

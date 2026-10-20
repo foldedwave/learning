@@ -1,4 +1,8 @@
-import type { BreakdownPart } from './types';
+export interface BreakdownPart {
+	placeValue: number;
+	digit: number;
+	roman: string;
+}
 
 export const MAX_ROMAN = 3_999_999;
 

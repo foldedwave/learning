@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { fromRoman, getPlaceValueBreakdown, toRoman } from './engine';
+import { fromRoman, getPlaceValueBreakdown, toRoman } from './convert';
 
 describe('toRoman', () => {
 	it.each([

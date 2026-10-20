@@ -1,3 +1,5 @@
+import type { BreakdownPart } from '#lib/content/maths/number/roman-numerals/convert.ts';
+
 export type Direction = 'toRoman' | 'toDecimal';
 
 export type InputMode = 'mc' | 'keypad';
@@ -42,11 +44,7 @@ export interface SavedState {
 	levels: Record<number, LevelProgress>;
 }
 
-export interface BreakdownPart {
-	placeValue: number;
-	digit: number;
-	roman: string;
-}
+export type { BreakdownPart } from '#lib/content/maths/number/roman-numerals/convert.ts';
 
 export type FeedbackKind = 'success' | 'error' | 'hint';
 

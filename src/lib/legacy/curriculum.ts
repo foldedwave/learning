@@ -1,4 +1,4 @@
-import type { Concept } from '../roman/types';
+import type { Concept } from './roman/types';
 
 /**
  * The Roman Quest curriculum. Lives server-side and is served through the

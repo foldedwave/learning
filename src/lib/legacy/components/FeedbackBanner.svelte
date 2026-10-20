@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { formatNumber } from '../roman/engine';
+	import { formatNumber } from '#lib/content/maths/number/roman-numerals/convert.ts';
 	import type { Feedback } from '../roman/types';
 
 	let { feedback }: { feedback: Feedback } = $props();

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Quest from '#lib/components/Quest.svelte';
+	import Quest from '#lib/legacy/components/Quest.svelte';
 	import { getCurriculum } from './curriculum.remote';
 </script>
 

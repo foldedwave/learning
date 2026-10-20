@@ -1,4 +1,4 @@
-import { BAR, formatNumber, getPlaceValueBreakdown } from './engine';
+import { BAR, formatNumber, getPlaceValueBreakdown } from '#lib/content/maths/number/roman-numerals/convert.ts';
 import { getDiagnosticMessage } from './diagnostics';
 import { createQuestion, generateChoices } from './questions';
 import { playSound } from './audio';
