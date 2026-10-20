@@ -1,5 +1,7 @@
 <script lang="ts">
-	import './layout.css';
+	import '@fontsource/lexend/400.css';
+	import '@fontsource/lexend/600.css';
+	import '../app.css';
 	import favicon from '#lib/assets/favicon.svg';
 	import type { LayoutProps } from './$types';
 
@@ -8,7 +10,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
-	<title>Roman Quest: The Ancient Numeral Adventure</title>
+	<title>Home Learning</title>
 </svelte:head>
 
 {@render children()}

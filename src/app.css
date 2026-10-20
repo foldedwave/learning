@@ -1,0 +1,127 @@
+/* Design tokens. Components never use raw colours or sizes; a theme is a new set of these values. */
+:root {
+	--font-body: 'Lexend', system-ui, sans-serif;
+	--text-sm: 0.95rem;
+	--text-base: 1.125rem; /* 18px */
+	--text-lg: 1.375rem;
+	--text-xl: 1.75rem;
+	--text-2xl: 2.25rem;
+	--space-1: 4px;
+	--space-2: 8px;
+	--space-3: 12px;
+	--space-4: 16px;
+	--space-6: 24px;
+	--space-8: 32px;
+	--space-12: 48px;
+	--radius-sm: 8px;
+	--radius-md: 14px;
+	--radius-lg: 22px;
+	--tap-min: 48px;
+	--measure: 40rem;
+	--bg: #f7f8fa;
+	--surface: #ffffff;
+	--surface-soft: #eef1f6;
+	--ink: #1d2433;
+	--ink-soft: #55607a;
+	--line: #dfe3ea;
+	--maths: #2b68d2; /* spec values adjusted to reach 4.5:1 on --bg (P1-02) */
+	--english: #7b4fd0;
+	--science: #1a7f57;
+	--good: #1a7f57;
+	--nudge: #a85d00; /* no red for wrong answers */
+	--nudge-soft: #fff4e5;
+	--good-soft: #e8f6ef;
+	--star: #8a5d00;
+	--focus: #ffb400;
+	--shadow-card: 0 2px 6px rgb(29 36 51 / 0.08);
+	--motion-fast: 150ms;
+	--motion-celebrate: 1200ms;
+	--font-scale: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		--motion-fast: 0ms;
+		--motion-celebrate: 0ms;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: calc(100% * var(--font-scale));
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--ink);
+	font-family: var(--font-body);
+	font-size: var(--text-base);
+	line-height: 1.55;
+	min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.2;
+	margin: 0 0 var(--space-3);
+}
+
+h1 {
+	font-size: var(--text-2xl);
+}
+
+h2 {
+	font-size: var(--text-xl);
+}
+
+h3 {
+	font-size: var(--text-lg);
+}
+
+p {
+	margin: 0 0 var(--space-3);
+}
+
+a {
+	color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+	color: inherit;
+}
+
+:focus-visible {
+	outline: 3px solid var(--focus);
+	outline-offset: 2px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+/* Subject colour, set by a parent element and read by cards, headers and buttons. */
+.subject-maths {
+	--subject: var(--maths);
+}
+.subject-english {
+	--subject: var(--english);
+}
+.subject-science {
+	--subject: var(--science);
+}

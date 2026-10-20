@@ -341,3 +341,30 @@ describe('time', () => {
 		expect(daysBetween('2026-07-01T23:30:00.000Z', '2026-07-02T08:00:00.000Z')).toBe(0);
 	});
 });
+
+describe('practice', async () => {
+	const { nextDifficulty, pickGenerator, showScaffold, startingDifficulty } =
+		await import('./practice.ts');
+
+	it('adapts difficulty', () => {
+		expect(startingDifficulty('learning')).toBe(1);
+		expect(startingDifficulty('developing')).toBe(2);
+		expect(startingDifficulty('mastered')).toBe(3);
+		expect(nextDifficulty(1, [true, true])).toBe(2);
+		expect(nextDifficulty(3, [true, true])).toBe(3);
+		expect(nextDifficulty(2, [true, false])).toBe(1);
+		expect(nextDifficulty(1, [false])).toBe(1);
+		expect(nextDifficulty(2, [false, true])).toBe(2);
+	});
+
+	it('fades scaffolds', () => {
+		expect(showScaffold(0, 'learning')).toBe(true);
+		expect(showScaffold(3, 'learning')).toBe(false);
+		expect(showScaffold(0, 'developing')).toBe(false);
+	});
+
+	it('avoids repeating a generator', () => {
+		for (const r of [0, 0.3, 0.6, 0.99]) expect(pickGenerator(3, 1, r)).not.toBe(1);
+		expect(pickGenerator(1, 0, 0.5)).toBe(0);
+	});
+});

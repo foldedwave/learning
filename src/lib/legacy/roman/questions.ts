@@ -1,4 +1,8 @@
-import { MAX_ROMAN, formatNumber, toRoman } from '#lib/content/maths/number/roman-numerals/convert.ts';
+import {
+	MAX_ROMAN,
+	formatNumber,
+	toRoman
+} from '#lib/content/maths/number/roman-numerals/convert.ts';
 import type { Question } from './types';
 
 const randInt = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;

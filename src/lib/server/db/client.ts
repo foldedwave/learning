@@ -20,3 +20,7 @@ export function createDb(path: string) {
 	migrate(db, { migrationsFolder: MIGRATIONS_FOLDER });
 	return db;
 }
+
+/** A transaction handle; anything that only reads and writes rows accepts either. */
+export type Tx = Parameters<Parameters<Db['transaction']>[0]>[0];
+export type Conn = Db | Tx;

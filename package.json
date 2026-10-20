@@ -16,7 +16,10 @@
 		"test": "npm run test:unit -- --run && npm run test:e2e",
 		"test:e2e": "playwright install && playwright test",
 		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build"
+		"build-storybook": "storybook build",
+		"validate:content": "node scripts/validate-content.ts",
+		"db:generate": "drizzle-kit generate",
+		"start": "node build"
 	},
 	"devDependencies": {
 		"@chromatic-com/storybook": "latest",

@@ -7,3 +7,5 @@ bun.lockb
 
 # Miscellaneous
 /static/
+docs/site-plan.md
+docs/spec.md
