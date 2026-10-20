@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1792500098663" clover="3.2.0">
+  <project timestamp="1792500098663" name="All files">
+    <metrics statements="136" coveredstatements="133" conditionals="115" coveredconditionals="103" methods="36" coveredmethods="35" elements="287" coveredelements="271" complexity="0" loc="136" ncloc="136" packages="1" files="7" classes="7"/>
+    <file name="config.ts" path="/home/user/learning/src/lib/engine/config.ts">
+      <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="43" count="1" type="stmt"/>
+      <line num="44" count="1" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
+      <line num="50" count="1" type="stmt"/>
+      <line num="51" count="1" type="stmt"/>
+      <line num="52" count="1" type="stmt"/>
+      <line num="53" count="1" type="stmt"/>
+      <line num="54" count="1" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+      <line num="58" count="1" type="stmt"/>
+    </file>
+    <file name="focus.ts" path="/home/user/learning/src/lib/engine/focus.ts">
+      <metrics statements="5" coveredstatements="5" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
+      <line num="10" count="6" type="stmt"/>
+      <line num="22" count="7" type="stmt"/>
+      <line num="23" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="2" type="cond" truecount="2" falsecount="0"/>
+    </file>
+    <file name="insights.ts" path="/home/user/learning/src/lib/engine/insights.ts">
+      <metrics statements="14" coveredstatements="14" conditionals="19" coveredconditionals="17" methods="7" coveredmethods="7"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="27" count="38" type="stmt"/>
+      <line num="28" count="2" type="stmt"/>
+      <line num="29" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="33" count="7" type="stmt"/>
+      <line num="34" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="6" type="stmt"/>
+      <line num="43" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="44" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="45" count="2" type="stmt"/>
+      <line num="46" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="47" count="40" type="stmt"/>
+      <line num="48" count="40" type="cond" truecount="2" falsecount="0"/>
+      <line num="53" count="2" type="cond" truecount="2" falsecount="0"/>
+    </file>
+    <file name="mastery.ts" path="/home/user/learning/src/lib/engine/mastery.ts">
+      <metrics statements="61" coveredstatements="60" conditionals="49" coveredconditionals="46" methods="10" coveredmethods="10"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="28" count="92" type="stmt"/>
+      <line num="29" count="46" type="stmt"/>
+      <line num="48" count="57" type="stmt"/>
+      <line num="75" count="32" type="cond" truecount="2" falsecount="0"/>
+      <line num="77" count="27" type="cond" truecount="4" falsecount="0"/>
+      <line num="82" count="32" type="cond" truecount="2" falsecount="0"/>
+      <line num="83" count="27" type="stmt"/>
+      <line num="86" count="23" type="stmt"/>
+      <line num="90" count="23" type="stmt"/>
+      <line num="91" count="23" type="stmt"/>
+      <line num="99" count="23" type="cond" truecount="2" falsecount="0"/>
+      <line num="101" count="23" type="cond" truecount="2" falsecount="0"/>
+      <line num="102" count="13" type="stmt"/>
+      <line num="103" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="104" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="109" count="1" type="stmt"/>
+      <line num="112" count="23" type="stmt"/>
+      <line num="117" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="120" count="1" type="stmt"/>
+      <line num="121" count="10" type="stmt"/>
+      <line num="141" count="12" type="cond" truecount="1" falsecount="1"/>
+      <line num="142" count="12" type="stmt"/>
+      <line num="143" count="12" type="stmt"/>
+      <line num="145" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="146" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="147" count="1" type="stmt"/>
+      <line num="148" count="1" type="stmt"/>
+      <line num="149" count="1" type="stmt"/>
+      <line num="150" count="1" type="stmt"/>
+      <line num="151" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="152" count="0" type="stmt"/>
+      <line num="154" count="2" type="stmt"/>
+      <line num="158" count="10" type="cond" truecount="1" falsecount="1"/>
+      <line num="159" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="160" count="7" type="stmt"/>
+      <line num="161" count="7" type="stmt"/>
+      <line num="162" count="7" type="stmt"/>
+      <line num="163" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="168" count="1" type="stmt"/>
+      <line num="169" count="1" type="stmt"/>
+      <line num="171" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="172" count="1" type="stmt"/>
+      <line num="173" count="1" type="stmt"/>
+      <line num="175" count="2" type="stmt"/>
+      <line num="176" count="2" type="stmt"/>
+      <line num="177" count="2" type="stmt"/>
+      <line num="178" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="180" count="1" type="stmt"/>
+      <line num="181" count="1" type="stmt"/>
+      <line num="182" count="1" type="stmt"/>
+      <line num="183" count="1" type="stmt"/>
+      <line num="184" count="1" type="stmt"/>
+      <line num="187" count="1" type="stmt"/>
+      <line num="188" count="1" type="stmt"/>
+      <line num="189" count="1" type="stmt"/>
+      <line num="190" count="1" type="stmt"/>
+      <line num="191" count="1" type="stmt"/>
+      <line num="194" count="10" type="stmt"/>
+      <line num="199" count="10" type="stmt"/>
+    </file>
+    <file name="rewards.ts" path="/home/user/learning/src/lib/engine/rewards.ts">
+      <metrics statements="14" coveredstatements="12" conditionals="21" coveredconditionals="15" methods="7" coveredmethods="6"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="56" count="9" type="stmt"/>
+      <line num="57" count="9" type="cond" truecount="5" falsecount="2"/>
+      <line num="59" count="3" type="stmt"/>
+      <line num="60" count="59" type="cond" truecount="2" falsecount="0"/>
+      <line num="61" count="39" type="stmt"/>
+      <line num="62" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="65" count="2" type="cond" truecount="4" falsecount="0"/>
+      <line num="69" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="73" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="77" count="1" type="stmt"/>
+      <line num="79" count="1" type="stmt"/>
+      <line num="81" count="0" type="stmt"/>
+    </file>
+    <file name="stuck.ts" path="/home/user/learning/src/lib/engine/stuck.ts">
+      <metrics statements="13" coveredstatements="13" conditionals="18" coveredconditionals="18" methods="4" coveredmethods="4"/>
+      <line num="20" count="7" type="stmt"/>
+      <line num="21" count="7" type="cond" truecount="4" falsecount="0"/>
+      <line num="23" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="30" count="5" type="stmt"/>
+      <line num="31" count="13" type="cond" truecount="2" falsecount="0"/>
+      <line num="32" count="5" type="cond" truecount="4" falsecount="0"/>
+      <line num="34" count="3" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="43" count="3" type="stmt"/>
+      <line num="44" count="3" type="cond" truecount="2" falsecount="0"/>
+    </file>
+    <file name="time.ts" path="/home/user/learning/src/lib/engine/time.ts">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="12" count="36" type="cond" truecount="1" falsecount="1"/>
+      <line num="16" count="26" type="stmt"/>
+      <line num="21" count="17" type="stmt"/>
+      <line num="22" count="17" type="stmt"/>
+      <line num="23" count="17" type="stmt"/>
+    </file>
+  </project>
+</coverage>

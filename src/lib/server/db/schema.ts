@@ -43,7 +43,10 @@ export const child = sqliteTable('child', {
 export const parent = sqliteTable('parent', {
 	id: integer('id').primaryKey(),
 	pinHash: text('pin_hash').notNull(),
-	settings: text('settings', { mode: 'json' }).$type<Record<string, unknown>>().notNull().default({}),
+	settings: text('settings', { mode: 'json' })
+		.$type<Record<string, unknown>>()
+		.notNull()
+		.default({}),
 	createdAt: createdAt()
 });
 

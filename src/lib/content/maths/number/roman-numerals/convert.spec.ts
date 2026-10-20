@@ -1,5 +1,16 @@
 import { describe, expect, it } from 'vitest';
-import { fromRoman, getPlaceValueBreakdown, toRoman } from './convert';
+import {
+	additiveValue,
+	fromRoman,
+	getPlaceValueBreakdown,
+	hasSubtractivePair,
+	lenientValue,
+	normaliseRoman,
+	toAcrossPlacesRoman,
+	toAdditiveRoman,
+	toReversedRoman,
+	toRoman
+} from './convert';
 
 describe('toRoman', () => {
 	it.each([
@@ -38,5 +49,57 @@ describe('fromRoman', () => {
 describe('getPlaceValueBreakdown', () => {
 	it('chunks by place value and skips zeros', () => {
 		expect(getPlaceValueBreakdown(1904).map((p) => p.roman)).toEqual(['M', 'CM', 'IV']);
+	});
+});
+
+describe('misconception helpers', () => {
+	it('reads numerals additively and leniently', () => {
+		expect(additiveValue('IV')).toBe(6);
+		expect(additiveValue('XLIX')).toBe(71);
+		expect(lenientValue('IL')).toBe(49);
+		expect(lenientValue('XLIX')).toBe(49);
+		expect(lenientValue('V̄')).toBe(5000);
+		expect(lenientValue('ABC')).toBeNull();
+	});
+
+	it('normalises typed answers', () => {
+		expect(normaliseRoman(' xl ix ')).toBe('XLIX');
+	});
+
+	it('detects subtractive pairs', () => {
+		expect(hasSubtractivePair('XIV')).toBe(true);
+		expect(hasSubtractivePair('XVI')).toBe(false);
+	});
+
+	it.each([
+		[4, 'IIII'],
+		[49, 'XXXXVIIII'],
+		[1999, 'MDCCCCLXXXXVIIII']
+	])('additive form of %i is %s', (n, roman) => {
+		expect(toAdditiveRoman(n)).toBe(roman);
+		expect(additiveValue(roman)).toBe(n);
+	});
+
+	it.each([
+		[4, 'VI'],
+		[49, 'LXXI'],
+		[944, 'MCLXVI']
+	])('reversed form of %i is %s', (n, roman) => {
+		expect(toReversedRoman(n)).toBe(roman);
+	});
+
+	it.each([
+		[49, 'IL'],
+		[99, 'IC'],
+		[45, 'VL'],
+		[1999, 'MIM'],
+		[1949, 'MCMIL'],
+		[490, 'XD'],
+		[4, null],
+		[40, null],
+		[12, null]
+	])('across-places form of %i is %s', (n, roman) => {
+		expect(toAcrossPlacesRoman(n)).toBe(roman);
+		if (roman) expect(lenientValue(roman)).toBe(n);
 	});
 });
